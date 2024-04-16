@@ -1,0 +1,283 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    
+}
+
+ 
+nav{
+    height: 73px;
+    width: 393px;
+    background-color: #9CAC12;
+    font-size: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+
+#titulo {    
+    font-family: 'Ingrid Darling', cursive;
+    color: white;
+    margin-top: 11px;
+    margin-left: 13px;
+    width: 50px;
+    display: inline-block;
+}
+
+.img-top {
+    max-width: 100%;
+    height: auto;
+    margin-top: 70px;
+   
+}
+
+.img-top-container {
+    position: relative;
+    display: inline-block; /* Permite que o contêiner se ajuste à largura da imagem */
+}
+
+.titulo-2 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 5px;
+    font-size: 4vw;
+    position: absolute;
+    top: 60%; /* Centraliza verticalmente */
+    left: 20%; /* Ajuste a distância da margem esquerda */
+    transform: translate(-50%, -50%); /* Centraliza vertical e horizontalmente */
+}
+
+.img-bolha {
+    border-radius: 0% 40% 40% 50%;
+    border: 1px solid #83D782;
+    width: 40%; /* Ajuste a largura de acordo com sua preferência */
+    max-width: 50%;   /* Define a largura máxima da imagem */
+    margin-top: 12%;
+    margin-left: 5%; /* Ajuste a margem esquerda */
+}
+
+
+.texto-top-right {
+    display: flex;
+}
+
+.texto-container {
+    margin-left: 5%;
+}
+
+.texto-01 {
+    color: #000;
+    font-family: Imprima;
+    font-size: 2.5vw; /* Tamanho de fonte responsivo em relação à largura da tela */
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    white-space: nowrap;
+    width: 70%; /* Largura do bloco de texto em relação à largura da tela */
+    margin-top: 50%;
+
+}
+
+.texto-01 span{
+    color: #83D782;
+    font-family: Imprima;
+    font-size: 2.5vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.texto-02 {
+    color: #000;
+    font-family: Imprima;
+    font-size: 1.5vw; /* Tamanho de fonte responsivo em relação à largura da tela */
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    white-space: nowrap;
+    width: 100px; /* Largura do bloco de texto em relação à largura da tela */
+    margin-top: 8%;
+    text-overflow: clip;
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    margin-top: 10%;
+    background-color: #9CAC12;
+    text-align: center;
+}
+
+.logo-footer{
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Ingrid Darling;
+    font-size: 40px;
+    font-style: normal;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.texto-04{
+    color: #FFF;
+    font-family: Imprima;
+    font-size: 2vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 1px;
+    white-space: nowrap;
+    text-overflow: clip;
+}
+
+.texto-05{
+    color: #FFF;
+    font-family: Imprima;
+    font-size: 2vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 20px;
+}
+
+/* Seus estilos globais aqui */
+
+.navbar {
+    background-color: #9CAC12;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.hamburger {
+    display: none; /* Oculta o ícone do hamburguer em telas maiores */
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.nav-list {
+    text-align: right;
+    position: absolute;
+    right: 2%;
+    top: 30%;
+    font-size: 25px;
+}
+
+.nav-list li{
+    display: inline-block;
+}
+
+.nav-list.active {
+    opacity: 1;
+}
+.nav-list li {
+    margin: 0 15px;
+}
+
+
+/* Estilos para telas menores */
+/* Estilos para telas menores */
+@media (max-width: 768px) {
+    body{
+        height: auto;
+    }
+    
+    .hamburger {
+        display: block; /* Mostra o ícone do hamburguer em telas menores */
+        position: absolute; /* Altera a posição para absoluta */
+        top: 20px; /* Posição superior a partir do topo */
+        right: 20px; /* Posição à direita a partir da borda direita */
+    }
+
+    .nav-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+        opacity: 0;
+        position: absolute; /* Altere a posição para absoluta */
+        top: 100%; /* Posição superior a partir do topo */
+        left: -5%;
+        right: 0%; /* Posição à direita a partir da borda direita */
+        width: 110%;
+        height: auto;
+        background-color: #9CAC12;
+        text-align: center;
+        z-index: 999;
+        font-size: 40px;
+    }
+
+    /* Outros estilos aqui */
+
+    /* Estilos para a lista de navegação quando estiver ativa */
+    .nav-list.active {
+        
+        opacity: 1;
+    }
+    
+    .nav-list li {
+        margin: 15px 0;
+    }
+    
+    .content {
+        margin-top: 60px; /* Altura do menu */
+    }
+    
+    
+
+    .nav-list li {
+        margin: 15px 0;
+    }
+}
+
+.img-bolha-2 {
+    border-radius: 0% 40% 40% 50%;
+    width: 30%; /* Ajuste a largura de acordo com sua preferência */
+    max-width: 30%;   /* Define a largura máxima da imagem */
+    margin-top: 12%;
+    margin-left: 5%; /* Ajuste a margem esquerda */
+}
+
+.texto-01-2 {
+    color: #000;
+    font-family: Imprima;
+    font-size: 2.5vw; /* Tamanho de fonte responsivo em relação à largura da tela */
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    white-space: nowrap;
+    width: 70%; /* Largura do bloco de texto em relação à largura da tela */
+    margin-top: 110%;
+}
+
+.texto-01-2 span {
+    color: blue;
+    font-family: Imprima;
+    font-size: 2.5vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

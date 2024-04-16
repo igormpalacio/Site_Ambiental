@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambient`s</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ingrid+Darling&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head> 
+<body> 
+    <nav>
+        <p id="titulo">Ambient`s</p>
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-list">
+            <li><a style="display: inline-block; text-decoration: none; color: white;" href="index.html">Início</a></li>
+            <li><a style="text-decoration: none; color: white;" href="sobre.html">Sobre</a></li>
+            <li><a style="text-decoration: none; color: white;" href="desenvolvedor.html">Desenvolvedor</a></li>
+        </ul>    
+  
+    </nav>
+    <main>
+        <div class="img-top-container">
+            <img class="img-top" src="imagem-sl4.jpg">
+            <p class="titulo-2">EDUCAÇÃO<br> AMBIENTAL</p>
+        </div>
+        <div class="texto-top-right">
+            <img class="img-bolha" src="img-ambiental-1.jpg">
+            <div class="texto-container">
+                <p class="texto-01">ENTENDA A <span>IMPORTÂNCIA</span> DA<br> EDUCAÇÃO AMBIENTAL</p>
+                <p class="texto-02">A educação é a chave para um futuro mais verde e sustentável, e a importância<br> da educação ambiental nunca foi tão evidente quanto nos dias de hoje. Nossa<br> relação com o meio ambiente está intrinsecamente ligada à qualidade de vida<br> que desfrutamos e ao legado que deixamos para as futuras gerações. Portanto,<br> é crucial compreender por que a educação desempenha um papel tão vital na<br> preservação e proteção do nosso planeta.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="logo-footer">Ambient`s</p>
+        <p class="texto-04">Faça do "Meio Ambiente" o seu "Meio de Vida".</p>
+        <img style="max-width: 15%; margin-top: 25px;" src="logo-brasil.png">
+        <p class="texto-05">© Desenvolvido por Igor Palacio</p>
+    </footer>
+    <script>
+const hamburger = document.querySelector('.hamburger');
+const navList = document.querySelector('.nav-list');
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navList.classList.toggle('active');
+});
+
+    </script>
+</body>
+</html>

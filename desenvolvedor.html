@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambient`s</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ingrid+Darling&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <p id="titulo">Ambient`s</p>
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-list">
+            <li><a style="display: inline-block; text-decoration: none; color: white;" href="index.html">Início</a></li>
+            <li><a style="text-decoration: none; color: white;" href="sobre.html">Sobre</a></li>
+            <li><a style="text-decoration: none; color: white;" href="desenvolvedor.html">Desenvolvedor</a></li>
+        </ul>    
+  
+    </nav>
+    <main>
+        <div class="img-top-container">
+            <img class="img-top" src="imagem-sl4.jpg">
+            <p class="titulo-2">EDUCAÇÃO<br> AMBIENTAL</p>
+        </div>
+        <div class="texto-top-right">
+            <img class="img-bolha-2" src="Igor-Desenvolvedor.jpg">
+            <div class="texto-container">
+                <p class="texto-01-2">IGOR <span>PALACIO</span></p>
+                <p class="texto-02">Olá, sou Igor Palacio, um desenvolvedor apaixonado por tecnologia.<br> Estou criando um site sobre meio ambiente para compartilhar informações,<br> notícias e dicas sustentáveis. Meu objetivo é oferecer recursos interativos<br> para conscientizar sobre a importância da preservação ambiental. Junte-se<br> a mim nesta jornada rumo a um mundo mais verde.<br><br> - Igor Palacio, Desenvolvedor e Defensor do Meio Ambiente.</p>
+            </div>
+        </div>
+    </main>
+    <footer id="teste">
+        <div>
+            <p class="logo-footer">Ambient`s</p>
+            <p class="texto-04">Faça do "Meio Ambiente" o seu "Meio de Vida".</p>
+            <img style="max-width: 15%; margin-top: 25px;" src="logo-brasil.png">
+            <p class="texto-05">© Desenvolvido por Igor Palacio</p>
+        </div>
+    </footer>
+    <script>
+const hamburger = document.querySelector('.hamburger');
+const navList = document.querySelector('.nav-list');
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navList.classList.toggle('active');
+});
+
+    </script>
+</body>
+</html> 

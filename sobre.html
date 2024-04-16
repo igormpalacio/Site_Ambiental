@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambient`s</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ingrid+Darling&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <p id="titulo">Ambient`s</p>
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-list">
+            <li><a style="display: inline-block; text-decoration: none; color: white;" href="index.html">Início</a></li>
+            <li><a style="text-decoration: none; color: white;" href="sobre.html">Sobre</a></li>
+            <li><a style="text-decoration: none; color: white;" href="desenvolvedor.html">Desenvolvedor</a></li>
+        </ul>    
+  
+    </nav>
+    <main>
+        <div class="img-top-container">
+            <img class="img-top" src="imagem-sl4.jpg">
+            <p class="titulo-2">EDUCAÇÃO<br> AMBIENTAL</p>
+        </div>
+        <div class="texto-top-right">
+            <div class="texto-container">
+                <p class="texto-01" style="margin-top: 20%;">Sustentabilidade Ambiental:<br> <span>Uma Prioridade para um Futuro Melhor</span></p>
+                <p class="texto-02">Na era atual, a conscientização sobre a importância da preservação do meio ambiente nunca esteve tão presente na sociedade.<br> A busca por soluções sustentáveis tornou-se uma responsabilidade compartilhada entre empresas, governos e cidadãos.<br> Neste cenário, a Ambient`s, comprometida com um futuro mais verde e próspero, assume o papel de liderança na promoção da<br> sustentabilidade ambiental.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p class="logo-footer">Ambient`s</p>
+            <p class="texto-04">Faça do "Meio Ambiente" o seu "Meio de Vida".</p>
+            <img style="max-width: 15%; margin-top: 25px;" src="logo-brasil.png">
+            <p class="texto-05">© Desenvolvido por Igor Palacio</p>
+        </div>
+    </footer>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navList = document.querySelector('.nav-list');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navList.classList.toggle('active');
+        });
+
+    </script>
+</body>
+</html> 
